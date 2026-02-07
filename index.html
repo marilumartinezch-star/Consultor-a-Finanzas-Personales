@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marilú Martínez | Consultoría Estratégica</title>
+    <title>Marilú Martínez | Taller de Finanzas Estratégicas</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
@@ -11,10 +11,9 @@
             theme: {
                 extend: {
                     colors: {
-                        'fin-blue': '#2D5CFE',
-                        'fin-purple': '#8E44FF',
-                        'fin-pink': '#E040FB',
-                        'fin-dark': '#1A2B6D',
+                        'marilu-dark': '#2D4739', /* Verde profundo de tu marca corporativa */
+                        'marilu-gold': '#C5A059', /* Dorado mate */
+                        'marilu-accent': '#2D5CFE',
                     }
                 }
             }
@@ -22,104 +21,118 @@
     </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,800;1,800&display=swap');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #FFFFFF; color: #1A2B6D; scroll-behavior: smooth; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #FFFFFF; color: #2D4739; scroll-behavior: smooth; }
         h1, h2, h3, h4, span, p, button, li, div { font-style: italic; font-weight: 800; }
-        .brand-text-gradient { background: linear-gradient(135deg, #2D5CFE, #8E44FF, #E040FB); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .glass-card { background: white; border-radius: 2.5rem; border: 1px solid #F1F5F9; box-shadow: 0 15px 35px rgba(26, 43, 109, 0.05); }
-        .activity-box { background: #F8FAFC; border-left: 4px solid #E040FB; padding: 1rem; border-radius: 1rem; margin-top: 1rem; }
+        .text-gradient { background: linear-gradient(135deg, #2D4739, #C5A059); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glass-card { background: white; border-radius: 2.5rem; border: 1px solid #F1F5F9; box-shadow: 0 20px 40px rgba(45, 71, 57, 0.05); transition: all 0.3s ease; }
+        .glass-card:hover { transform: translateY(-5px); box-shadow: 0 25px 50px rgba(45, 71, 57, 0.1); }
+        .activity-box { background: #FDFBF7; border-left: 4px solid #C5A059; padding: 1.25rem; border-radius: 1.25rem; margin-top: 1.5rem; }
+        .coexistence-rule { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: #94A3B8; }
     </style>
 </head>
 <body class="antialiased">
 
-    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 px-8 py-4 flex justify-between items-center">
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 px-8 py-5 flex justify-between items-center">
         <div class="flex items-center gap-4">
-            <div class="text-fin-dark text-xl tracking-tighter uppercase italic leading-none">
+            <div class="text-marilu-dark text-xl tracking-tighter uppercase italic leading-none">
                 Marilú Martínez
-                <span class="block text-[8px] brand-text-gradient tracking-[0.3em]">Mentora en Libertad Financiera</span>
+                <span class="block text-[9px] text-marilu-gold tracking-[0.3em]">Ingeniera Empresarial Titulada & Colegiada</span>
             </div>
         </div>
-        <div class="text-[10px] uppercase tracking-widest italic font-black text-fin-blue">
-            FINLINGO
+        <div class="hidden md:block">
+            <span class="text-[10px] text-marilu-dark/60 uppercase tracking-widest italic font-black">Asesoría de Alto Impacto</span>
         </div>
     </nav>
 
     <main class="pt-32 pb-20 px-6 max-w-6xl mx-auto">
         
-        <header class="text-center mb-16">
-            <div class="inline-block bg-slate-100 text-slate-500 px-4 py-1 rounded-full text-[10px] uppercase tracking-widest mb-4 italic">
-                Consultoría High-End para Jóvenes con Salario
+        <header class="text-center mb-20">
+            <div class="inline-block bg-marilu-dark text-white px-5 py-1.5 rounded-full text-[10px] uppercase tracking-[0.2em] mb-6 italic">
+                Masterclass de 2 Sesiones
             </div>
-            <h1 class="text-4xl md:text-6xl text-fin-dark uppercase italic tracking-tighter leading-none mb-4">
-                DOMINA TU SALARIO <br><span class="brand-text-gradient">EN 2 SESIONES</span>
+            <h1 class="text-5xl md:text-7xl text-marilu-dark uppercase italic tracking-tighter leading-[0.9] mb-6">
+                INGENIERÍA DE TUS <br><span class="text-marilu-gold">FINANZAS PERSONALES</span>
             </h1>
-            <p class="text-slate-500 italic max-w-2xl mx-auto">
-                Basado en mi metodología como ingeniera empresarial: Diagnóstico preciso y ejecución estratégica.
+            <p class="text-slate-500 italic max-w-2xl mx-auto text-lg leading-relaxed">
+                He diseñado un sistema práctico para que tomes el control absoluto de tu dinero. Sin rodeos, solo la estructura técnica que necesitas para crecer.
             </p>
         </header>
 
+        <div class="mb-16 flex flex-wrap justify-center gap-8 coexistence-rule">
+            <span><i class="fa-solid fa-check text-marilu-gold mr-1"></i> Participación Activa</span>
+            <span><i class="fa-solid fa-check text-marilu-gold mr-1"></i> Respeto & Confidencialidad</span>
+            <span><i class="fa-solid fa-check text-marilu-gold mr-1"></i> Compromiso de Ejecución</span>
+        </div>
+
         <div class="grid md:grid-cols-2 gap-10">
             
-            <div class="glass-card p-8 border-t-8 border-t-fin-blue">
-                <div class="flex items-center gap-3 mb-6">
-                    <span class="bg-fin-blue text-white w-10 h-10 rounded-full flex items-center justify-center italic text-xl">A</span>
-                    <h3 class="text-2xl uppercase italic text-fin-dark">El Espejo de tus Finanzas</h3>
+            <div class="glass-card p-10 border-t-8 border-t-marilu-dark">
+                <div class="flex items-center gap-4 mb-8">
+                    <span class="bg-marilu-dark text-white w-12 h-12 rounded-2xl flex items-center justify-center italic text-2xl shadow-lg">01</span>
+                    <h3 class="text-3xl uppercase italic text-marilu-dark leading-none">Arquitectura <br>del Gasto</h3>
                 </div>
                 
-                <p class="text-xs text-slate-400 uppercase tracking-widest mb-4">Estrategia de flujo de caja</p>
+                <p class="text-[11px] text-marilu-gold uppercase tracking-widest mb-6 border-b border-slate-100 pb-2">Diagnóstico y Flujo de Caja</p>
                 
-                <ul class="space-y-3 text-sm italic text-slate-600 mb-6">
-                    <li><i class="fa-solid fa-circle-check text-fin-blue mr-2"></i> Auditoría de estados de cuenta.</li>
-                    <li><i class="fa-solid fa-circle-check text-fin-blue mr-2"></i> Cálculo del valor real de tu hora laboral.</li>
-                    <li><i class="fa-solid fa-circle-check text-fin-blue mr-2"></i> Sistema de Retención 50/30/20.</li>
+                <ul class="space-y-4 text-sm italic text-slate-600 mb-8">
+                    <li class="flex items-start"><i class="fa-solid fa-magnifying-glass-chart text-marilu-gold mt-1 mr-3"></i> <span><b>Auditoría de Movimientos:</b> Identificaremos tus hábitos de consumo real frente a tus metas.</span></li>
+                    <li class="flex items-start"><i class="fa-solid fa-calculator text-marilu-gold mt-1 mr-3"></i> <span><b>El Valor de tu Esfuerzo:</b> Determinaremos el precio real de cada hora de tu trabajo.</span></li>
+                    <li class="flex items-start"><i class="fa-solid fa-diagram-project text-marilu-gold mt-1 mr-3"></i> <span><b>Matriz 50/30/20:</b> Estructuraremos tus ingresos para cubrir lo esencial, lo deseado y tu futuro.</span></li>
                 </ul>
 
                 <div class="activity-box">
-                    <h4 class="text-[10px] uppercase text-fin-pink mb-2"><i class="fa-solid fa-bolt mr-1"></i> Actividad en Vivo:</h4>
-                    <p class="text-xs italic text-fin-dark leading-relaxed">
-                        <b>Hack de Automatización:</b> Configuración en tiempo real de tu cuenta de "Ahorro Invisible" en tu App bancaria para separar el 10% de tu próximo sueldo.
+                    <h4 class="text-[11px] uppercase text-marilu-dark mb-2 flex items-center"><i class="fa-solid fa-bolt-lightning mr-2"></i> Actividad Estratégica:</h4>
+                    <p class="text-xs italic text-marilu-dark leading-relaxed">
+                        <b>Diseño de Retención:</b> Configuraremos en vivo tu sistema de "pre-ahorro" automatizado para que tu estabilidad no dependa de tu fuerza de voluntad.
                     </p>
                 </div>
             </div>
 
-            <div class="glass-card p-8 border-t-8 border-t-fin-purple">
-                <div class="flex items-center gap-3 mb-6">
-                    <span class="bg-fin-purple text-white w-10 h-10 rounded-full flex items-center justify-center italic text-xl">B</span>
-                    <h3 class="text-2xl uppercase italic text-fin-dark">Blindaje y Expansión</h3>
+            <div class="glass-card p-10 border-t-8 border-t-marilu-gold">
+                <div class="flex items-center gap-4 mb-8">
+                    <span class="bg-marilu-gold text-white w-12 h-12 rounded-2xl flex items-center justify-center italic text-2xl shadow-lg">02</span>
+                    <h3 class="text-3xl uppercase italic text-marilu-dark leading-none">Blindaje y <br>Patrimonio</h3>
                 </div>
 
-                <p class="text-xs text-slate-400 uppercase tracking-widest mb-4">Estrategia de patrimonio</p>
+                <p class="text-[11px] text-marilu-gold uppercase tracking-widest mb-6 border-b border-slate-100 pb-2">Seguridad y Proyección Futura</p>
 
-                <ul class="space-y-3 text-sm italic text-slate-600 mb-6">
-                    <li><i class="fa-solid fa-circle-check text-fin-purple mr-2"></i> Construcción de tu Número de Paz Mental.</li>
-                    <li><i class="fa-solid fa-circle-check text-fin-purple mr-2"></i> Análisis de capacidad de endeudamiento.</li>
-                    <li><i class="fa-solid fa-circle-check text-fin-purple mr-2"></i> Ruta de inversión personalizada Nivel 1.</li>
+                <ul class="space-y-4 text-sm italic text-slate-600 mb-8">
+                    <li class="flex items-start"><i class="fa-solid fa-shield-halved text-marilu-gold mt-1 mr-3"></i> <span><b>Fondo de Paz Mental:</b> Calcularemos cuánto necesitas para vivir con total seguridad ante imprevistos.</span></li>
+                    <li class="flex items-start"><i class="fa-solid fa-credit-card text-marilu-gold mt-1 mr-3"></i> <span><b>Gestión de Crédito:</b> Estrategias para que las tarjetas de crédito sean tus aliadas y no tu carga.</span></li>
+                    <li class="flex items-start"><i class="fa-solid fa-arrow-trend-up text-marilu-gold mt-1 mr-3"></i> <span><b>Primeros Pasos en Inversión:</b> Cómo empezar a rentabilizar tus ahorros con inteligencia.</span></li>
                 </ul>
 
-                <div class="activity-box" style="border-left-color: #8E44FF;">
-                    <h4 class="text-[10px] uppercase text-fin-purple mb-2"><i class="fa-solid fa-bolt mr-1"></i> Actividad en Vivo:</h4>
-                    <p class="text-xs italic text-fin-dark leading-relaxed">
-                        <b>El Semáforo de Deuda:</b> Revisamos tus tarjetas de crédito y clasificamos tus deudas para crear un plan de liquidación "Bola de Nieve".
+                <div class="activity-box" style="border-left-color: #2D4739;">
+                    <h4 class="text-[11px] uppercase text-marilu-dark mb-2 flex items-center"><i class="fa-solid fa-fire mr-2"></i> Dinámica de Blindaje:</h4>
+                    <p class="text-xs italic text-marilu-dark leading-relaxed">
+                        <b>Plan de Salida:</b> Analizaremos tus compromisos financieros actuales y crearemos una hoja de ruta para liquidar deudas de forma acelerada.
                     </p>
                 </div>
             </div>
 
         </div>
 
-        <section class="mt-20 flex flex-col md:flex-row items-center gap-10 p-10 bg-slate-50 rounded-[3rem]">
-            <div class="w-32 h-32 bg-fin-dark rounded-full overflow-hidden flex-shrink-0 border-4 border-white shadow-xl">
-                <img src="marilu-martinez.jpg" alt="Marilú Martínez" class="w-full h-full object-cover">
+        <section class="mt-24 flex flex-col md:flex-row items-center gap-12 p-12 bg-slate-50 rounded-[4rem] border border-slate-100">
+            <div class="relative">
+                <div class="w-44 h-44 bg-marilu-dark rounded-3xl overflow-hidden flex-shrink-0 border-4 border-white shadow-2xl rotate-2">
+                    <img src="marilu-martinez.jpeg" alt="Marilú Martínez" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute -bottom-4 -right-4 bg-marilu-gold text-white text-[10px] px-4 py-1.5 rounded-full italic font-black shadow-lg">COLEGIADA CIP</div>
             </div>
             <div>
-                <h2 class="text-2xl uppercase italic text-fin-dark mb-2">Por qué trabajar conmigo</h2>
-                <p class="text-sm italic text-slate-600 leading-relaxed mb-4">
-                    "Como ingeniera, no te daré consejos vagos. Te daré una estructura. Mi meta con FINLINGO es que dejes de trabajar por dinero y que tu salario se convierta en la base de tu libertad. ¡Empecemos!"
+                <h2 class="text-3xl uppercase italic text-marilu-dark mb-4 leading-none">Mi compromiso contigo</h2>
+                <p class="text-base italic text-slate-600 leading-relaxed mb-6">
+                    "Como ingeniera, no creo en los consejos mágicos. Creo en los sistemas que funcionan. Mi meta es entregarte las herramientas que yo misma utilizo para gestionar finanzas de alto nivel, adaptadas a tu realidad actual para que tu dinero deje de ser una preocupación y se convierta en tu mejor herramienta de libertad."
                 </p>
-                <p class="text-[10px] uppercase tracking-widest font-black text-fin-blue">Marilú Martínez | Fundadora de Finlingo</p>
+                <div class="flex flex-col">
+                    <p class="text-sm uppercase tracking-widest font-black text-marilu-dark italic">Ing. Marilú Martínez</p>
+                    <p class="text-[10px] text-marilu-gold uppercase italic tracking-widest">Estratega Administrativa & Financiera</p>
+                </div>
             </div>
         </section>
 
-        <footer class="mt-24 text-center">
-            <p class="text-[10px] uppercase tracking-[0.5em] opacity-40 italic font-black">¡FINLINGO recién está empezando!</p>
+        <footer class="mt-24 text-center border-t border-slate-100 pt-10">
+            <p class="text-[11px] uppercase tracking-[0.5em] text-marilu-dark/40 italic font-black">Marilú Martínez | Finanzas con Propósito</p>
         </footer>
 
     </main>
